@@ -12,7 +12,6 @@ const Rightheader = ({ logclose }) => {
     const navigate = useNavigate();
 
 
-
     //added
     const handleCartClick = () => {
         logclose();

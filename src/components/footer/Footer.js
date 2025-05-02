@@ -3,7 +3,7 @@ import "./footer.css"
 import { NavLink } from 'react-router-dom';
 // import { FaRegCopyright } from "react-icons/fa6";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL ="https://tob-pl9c.onrender.com";
 const Footer = () => {
 
     const year = new Date().getFullYear();

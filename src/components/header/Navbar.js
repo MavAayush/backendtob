@@ -20,7 +20,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useSelector } from "react-redux";
 import "./navbar.css";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL ="https://tob-pl9c.onrender.com";
+
 const Navbar = () => {
 
     const { account, setAccount } = useContext(LoginContext);
@@ -138,10 +139,10 @@ const Navbar = () => {
                     </Drawer>
 
                     <div className="navlogo">
-                        <NavLink to="/"><img src={`  /images/Logo.png`} className="logo-desktop" alt="logo" /></NavLink>
+                        <NavLink to="/"><img src={`https://tob-pl9c.onrender.com/images/Logo.png`} className="logo-desktop" alt="logo" /></NavLink>
 
                         <NavLink to="/">
-                            <img src={`  /images/Logo.png`} className="logo-mobile" alt="mobile-logo" />
+                            <img src={`  https://tob-pl9c.onrender.com/images/Logo.png`} className="logo-mobile" alt="mobile-logo" />
                         </NavLink>
                     </div>
 

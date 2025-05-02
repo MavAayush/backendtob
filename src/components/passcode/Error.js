@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL ="https://tob-pl9c.onrender.com";
 
 const Error = () => {
   return (

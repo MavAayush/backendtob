@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./mix.css";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL ="https://tob-pl9c.onrender.com";
 
 const PasswordReset = () => {
   const [email, setEmail] = useState("");

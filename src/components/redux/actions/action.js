@@ -1,6 +1,6 @@
 export const getProducts = () => async (dispatch) => {
     try {
-        const data = await fetch("http://localhost:8005/getproducts", {
+        const data = await fetch("https://tob-pl9c.onrender.com/getproducts", {
             method: "GET",
             headers: {
                 "Content-Type":"application/json"
@@ -14,3 +14,4 @@ export const getProducts = () => async (dispatch) => {
         dispatch({ type: "FAIL_GET_PRODUCTS", payload: error.response })
     }
 }
+
