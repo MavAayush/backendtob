@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./cart.css";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL = "https://tob-pl9c.onrender.com";
 
 const Cart = () => {
     const { id } = useParams("");
@@ -20,7 +20,7 @@ const Cart = () => {
 
     const getinddata = async () => {
         try {
-            const res = await fetch(`/getproductsone/${id}`, {
+            const res = await fetch(`https://tob-pl9c.onrender.com/getproductsone/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const Cart = () => {
         }
     
         try {
-            const checkres = await fetch(`/addcart/${id}`, {
+            const checkres = await fetch(`https://tob-pl9c.onrender.com/addcart/${id}`, {
                 method: "POST",
                 headers: {
                     Accept: "application/json",

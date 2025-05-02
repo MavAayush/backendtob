@@ -1,10 +1,10 @@
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL = "https://tob-pl9c.onrender.com";
 
 export const products = [
     { 
         id: 'product1',
-        url: `images/ProductImg1.png`, 
-        detailUrl: `/images/ProductImg1.png`,
+        url: `${BASE_URL}/images/ProductImg1.png`, 
+        detailUrl: `${BASE_URL}/images/ProductImg1.png`,
         title: {
             shortTitle: `Premium Raw Tobacco for Authentic Experience\u2002(1 kg)`,
             longTitle: 'Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience (1 kg)'
@@ -20,8 +20,8 @@ export const products = [
     },
     { 
         id: 'product2',
-        url: `/images/ProductImg2.png`, 
-        detailUrl: `/images/ProductImg2.png`,
+        url: `${BASE_URL}/images/ProductImg2.png`, 
+        detailUrl: `${BASE_URL}/images/ProductImg2.png`,
         title: {
             shortTitle: 'Premium Raw Tobacco for Authentic Experience\u2002(500 gm)',
             longTitle: 'Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience (500 gm)'
@@ -37,8 +37,8 @@ export const products = [
     },
     { 
         id: 'product3',
-        url: `/images/ProductImg3.png`, 
-        detailUrl: `/images/ProductImg3.png`, 
+        url: `${BASE_URL}/images/ProductImg3.png`, 
+        detailUrl: `${BASE_URL}/images/ProductImg3.png`, 
         title: {
             shortTitle: 'Premium Raw Tobacco for Authentic Experience\u2002(250 gm)',
             longTitle: 'Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience (250 gm)'
@@ -54,8 +54,8 @@ export const products = [
     },
     { 
         id: 'product4',
-        url: `/images/ProductImg4.png`, 
-        detailUrl: `/images/ProductImg4.png`,
+        url: `${BASE_URL}/images/ProductImg4.png`, 
+        detailUrl: `${BASE_URL}/images/ProductImg4.png`,
         title: {
             shortTitle: 'Premium Raw Tobacco for Authentic Experience\u2002(200 gm)',
             longTitle: 'Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience (200 gm)'
@@ -71,8 +71,8 @@ export const products = [
     },
     { 
         id: 'product5',
-        url: `/images/ProductImg5.png`, 
-        detailUrl: `/images/ProductImg5.png`,
+        url: `${BASE_URL}/images/ProductImg5.png`, 
+        detailUrl: `${BASE_URL}/images/ProductImg5.png`,
         title: {
             shortTitle: 'Premium Raw Tobacco for Authentic Experience\u2002(100 gm)',
             longTitle: 'Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience (100 gm)'
@@ -88,8 +88,8 @@ export const products = [
     },
     { 
         id: 'product6',
-        url: `/images/ProductImg6.jpg`, 
-        detailUrl: `/images/ProductImg6.jpg`,
+        url: `${BASE_URL}/images/ProductImg6.jpg`, 
+        detailUrl: `${BASE_URL}/images/ProductImg6.jpg`,
         title: {
             shortTitle: 'Durable Plastic Tobacco Box - Convenient \nand Secure Storage',
             longTitle: 'Durable Plastic Tobacco Box - Compact, Lightweight, and Perfect for Storing Your Raw Tobacco Securely | Ideal for On-the-Go Use'
@@ -105,8 +105,8 @@ export const products = [
     },
     { 
         id: 'product7',
-        url: `/images/ProductImg7.jpg`, 
-        detailUrl: `/images/ProductImg7.jpg`,
+        url: `${BASE_URL}/images/ProductImg7.jpg`, 
+        detailUrl: `${BASE_URL}/images/ProductImg7.jpg`,
         title: {
             shortTitle: 'Elegant Silver Tobacco Box - Stylish and Premium Storage Solution',
             longTitle: 'Elegant Silver Tobacco Box - Sleek, Durable, and Classy Storage for Your Raw Tobacco | A Premium Choice for Discerning Smokers',
@@ -122,8 +122,8 @@ export const products = [
     },
     { 
         id: 'product8',
-        url: `/images/ProductImg8.jpg`,
-        detailUrl: `/images/ProductImg8.jpg`, 
+        url: `${BASE_URL}/images/ProductImg8.jpg`,
+        detailUrl: `${BASE_URL}/images/ProductImg8.jpg`, 
         title: {
             shortTitle: 'Vintage Brass Tobacco Box - Timeless, Strong, and Practical Storage',
             longTitle: 'Vintage Brass Tobacco Box - Durable, Classic, and Secure Storage for Raw Tobacco | A Premium, Timeless Choice for Smokers'
