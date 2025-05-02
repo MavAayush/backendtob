@@ -22,34 +22,7 @@
     margin-top: 0;
     box-sizing: border-box;
 }
-.banner-slider {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .banner-slide1,
-  .banner-slide2 {
-    position: relative;
-    text-align: center;
-  }
-  
-  .banner-image {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 2;
-    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
-  }
-  
+
 /* .banner-slide1 {
     background-image: url("/card1.jpg");
     background-size: cover;
