@@ -1,7 +1,7 @@
 import React from 'react'
 import "./footer.css"
 import { NavLink } from 'react-router-dom';
-import { FaRegCopyright } from "react-icons/fa6";
+// import { FaRegCopyright } from "react-icons/fa6";
 
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="lastdetails">
                 <img src={`${BASE_URL}/images/Logo.png`} className="logo" alt="logo" />
                 <p>Conditions of Use & Sale &nbsp; &nbsp; &nbsp; Privacy Note</p>
-                <p><FaRegCopyright /> Kesari Traders 1927-{year}</p>
+                <p>&copy;Kesari Traders 1927-{year}</p>
             </div>
         </footer>
     )
