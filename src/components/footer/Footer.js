@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="lastdetails">
-                <img src={`${BASE_URL}/images/Logo.png`} className="logo" alt="logo" />
+                <img src={`  /images/Logo.png`} className="logo" alt="logo" />
                 <p>Conditions of Use & Sale &nbsp; &nbsp; &nbsp; Privacy Note</p>
                 <p>&copy;Kesari Traders 1927-{year}</p>
             </div>

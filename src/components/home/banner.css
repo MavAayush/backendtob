@@ -23,22 +23,22 @@
     box-sizing: border-box;
 }
 
-.banner-slide1 {
-    background-image: url("/public/card1.jpg");
+/* .banner-slide1 {
+    background-image: url("/card1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 
-.banner-slide2 {
+/* .banner-slide2 {
     background:url('/public/images/card2.jpg')no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 .banner-content {
     position: absolute;

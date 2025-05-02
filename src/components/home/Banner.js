@@ -42,7 +42,14 @@ const Banner = () => {
     ]
   };
   return (
-    <div className="banner-slider" >
+    <div className="banner-slider"   style={{
+      backgroundImage: 'url("/card1.jpg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+    }}>
+
       <Slider {...settings}>
         <div className="banner-slide1">
           <div className="banner-content">
@@ -54,8 +61,14 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="banner-slide2">
-          <div className="banner-content">
+        <div className="banner-slide2"  style={{
+    backgroundImage: 'url("/images/card2.jpg")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  }} >
+          <div className="banner-content"  >
             <h2>Your Destination for Premium Tobacco</h2>
             <p> From carefully sourced leaves to masterful processing techniques.<br />
               Keshri Tobacco stands as a destination for those who seek elegance in every experience.

@@ -27,7 +27,24 @@ const Maincomp = () => {
                 <Banner />
             </div>
             <Slide title="Our Products" products={products} />
-            <div className="center_img">
+            <div
+  className="center_img"
+  style={{
+    backgroundImage: 'url("/images/card3.jpg")',
+    position: "relative",
+    width: "100%",
+    height: "80vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    color: "white",
+    marginTop: 0,
+    paddingTop: 0,
+    boxSizing: "border-box"
+  }}
+>
+
                 <div className="overlay">
                     <h1>Shop Premium Tobacco Products</h1>
                     <p>Browse our extensive selection of premium tobacco products and more. Enjoy a seamless shopping experience from home.</p>
