@@ -7,7 +7,7 @@ import { useContext } from 'react';
 import { LoginContext } from '../context/ContextProvider';
 import "./signup.css";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL = "https://tob-pl9c.onrender.com";
 
 const SignUp = () => {
 
