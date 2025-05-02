@@ -42,13 +42,14 @@ const Banner = () => {
     ]
   };
   return (
-    <div className="banner-slider"   style={{
-      backgroundImage: 'url("https://drive.google.com/drive/u/0/folders/1ZspaYBLUIWExLWRWjgyzZwp28s6SIb47")',
+    <div className="banner-slider" style={{
+      backgroundImage: 'url("https://bsmedia.business-standard.com/_media/bs/img/article/2023-04/19/full/1681882435-7523.jpg?im=FeatureCrop,size=(1200,900)")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundAttachment: 'fixed',
     }}>
+      
 
       <Slider {...settings}>
         <div className="banner-slide1">
@@ -62,7 +63,7 @@ const Banner = () => {
         </div>
 
         <div className="banner-slide2"  style={{
-    backgroundImage: 'url("https://drive.google.com/drive/folders/1ZspaYBLUIWExLWRWjgyzZwp28s6SIb47")',
+    backgroundImage: 'url("https://images.unsplash.com/photo-1725645843195-979b86f9cfe0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRvYmFjY28lMjBmYXJtfGVufDB8fDB8fHww")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
