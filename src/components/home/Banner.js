@@ -43,7 +43,7 @@ const Banner = () => {
   };
   return (
     <div className="banner-slider"   style={{
-      backgroundImage: 'url("/card1.jpg")',
+      backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSme198rpcv9sLYHcusEQ9j_7IkochXv4lT_Q&s)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
