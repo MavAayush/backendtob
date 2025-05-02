@@ -24,7 +24,7 @@
 }
 
 .banner-slide1 {
-    /* background-image: url("/public/card1.jpg"); */
+    background-image: url("/public/card1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 
 
 .banner-slide2 {
-    /* background:url('/public/images/card2.jpg')no-repeat center center/cover; */
+    background:url('/public/images/card2.jpg')no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
