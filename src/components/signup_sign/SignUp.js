@@ -47,7 +47,7 @@ const SignUp = () => {
         }
 
         const { fname, email, mobile, password, cpassword } = udata;
-        const res = await fetch("register", {
+        const res = await fetch("/https://tob-pl9c.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
