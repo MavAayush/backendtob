@@ -14,7 +14,7 @@ const Buynow = () => {
     const navigate = useNavigate();
 
     const getdatabuy = async () => {
-        const res = await fetch("/cartdetails", {
+        const res = await fetch("https://tob-pl9c.onrender.com/cartdetails", {
             method: "GET",
             headers: {
                 Accept: "application/json",

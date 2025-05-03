@@ -19,7 +19,7 @@ const Option = ({ deletedata, get, item, onQuantityChange }) => {
   // Delete item from cart
   const removedata = async (req,res) => {
     try {
-      const res = await fetch(`/remove/${deletedata}`, {
+      const res = await fetch(`https://tob-pl9c.onrender.com/remove/${deletedata}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json",

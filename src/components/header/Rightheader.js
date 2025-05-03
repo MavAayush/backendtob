@@ -22,7 +22,7 @@ const Rightheader = ({ logclose }) => {
 
     const logoutuser = async () => {
         try {
-            const res2 = await fetch("/lougout", {
+            const res2 = await fetch("https://tob-pl9c.onrender.com/lougout", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
