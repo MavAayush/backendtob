@@ -45,6 +45,8 @@ header nav .left input {
     outline: none;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     font-size: 14px;
     padding-left: 10px;
 }

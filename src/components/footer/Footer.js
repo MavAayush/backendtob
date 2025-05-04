@@ -19,10 +19,10 @@ const Footer = () => {
                 </div>
                 <div className='footer_details_one'>
                     <h3>Connect With US</h3>
-                    <p><a href="mailto:keshritobacco.store@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
-                    <p><a href="" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-                    <p><a href="https://www.instagram.com/keshritobacco?igsh=MWlybzdtbG1kdzd0bg==" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-                    <p><a href="https://www.instagram.com/keshritobacco?igsh=MWlybzdtbG1kdzd0bg==" target="_blank" rel="noopener noreferrer">Twitter</a></p>
+                    <a href="mailto:keshritobacco.store@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> <br/>
+                    <a href="" target="_blank" rel="noopener noreferrer">Facebook</a><br/>
+                    <a href="https://www.instagram.com/keshritobacco?igsh=MWlybzdtbG1kdzd0bg==" target="_blank" rel="noopener noreferrer">Instagram</a><br/>
+                    <a href="https://www.instagram.com/keshritobacco?igsh=MWlybzdtbG1kdzd0bg==" target="_blank" rel="noopener noreferrer">Twitter</a><br/>
                 </div>
                 <div className='footer_details_one forres'>
                     <h3>Customer Services</h3>

@@ -22,6 +22,7 @@
     border-radius: 5px;
     max-width: 90%; /* new */
     background: rgba(255, 255, 255, 0.05); 
+    min-width: 300px;
 }
 
 .sign_form_x h1{
