@@ -142,7 +142,7 @@ const Navbar = () => {
                         <NavLink to="/"><img src={`https://tob-pl9c.onrender.com/images/Logo.png`} className="logo-desktop" alt="logo" /></NavLink>
 
                         <NavLink to="/">
-                            <img src={`  https://tob-pl9c.onrender.com/images/Logo.png`} className="logo-mobile" alt="mobile-logo" />
+                            <img src={`https://tob-pl9c.onrender.com/images/Logo.png`} className="logo-mobile" alt="mobile-logo" />
                         </NavLink>
                     </div>
 

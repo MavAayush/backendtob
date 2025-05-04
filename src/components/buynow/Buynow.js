@@ -5,33 +5,45 @@ import Subtotal from './Subtotal';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import "./buynow.css";
+import { CircularProgress } from '@mui/material';
 
-const BASE_URL ="https://tob-pl9c.onrender.com";
-
+const BASE_URL = process.env.REACT_APP_API_URL || "https://tob-pl9c.onrender.com";
 
 const Buynow = () => {
-    const [cartdata, setCartdata] = useState("");
+    const [cartdata, setCartdata] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
     const navigate = useNavigate();
 
     const getdatabuy = async () => {
-        const res = await fetch("https://tob-pl9c.onrender.com/cartdetails", {
-            method: "GET",
-            headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
-            },
-            credentials: "include"
-        });
+        try {
+            setLoading(true);
+            setError(null);
+            const res = await fetch(`${BASE_URL}/cartdetails`, {
+                method: "GET",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                credentials: "include"
+            });
 
-        const data = await res.json();
+            const data = await res.json();
 
-        if (res.status !== 201) {
-            console.log("error");
-        } else {
-            setCartdata(data.carts.map(item => ({
-                ...item,
-                quantity: 1 
-            })));
+            if (res.status !== 201) {
+                setError("Failed to fetch cart data");
+                console.error("Error fetching cart data");
+            } else {
+                setCartdata(data.carts.map(item => ({
+                    ...item,
+                    quantity: 1 
+                })));
+            }
+        } catch (error) {
+            setError("Network error. Please try again.");
+            console.error("Error:", error);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -45,6 +57,24 @@ const Buynow = () => {
     useEffect(() => {
         getdatabuy();
     }, []);
+
+    if (loading) {
+        return (
+            <div className="loading-container">
+                <CircularProgress />
+                <p>Loading cart data...</p>
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div className="error-container">
+                <p>{error}</p>
+                <button onClick={getdatabuy}>Retry</button>
+            </div>
+        );
+    }
 
     return (
         <div className="buynow_section">

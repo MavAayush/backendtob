@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./cart.css";
 
-const BASE_URL = "https://tob-pl9c.onrender.com";
+const BASE_URL = process.env.REACT_APP_API_URL || "https://tob-pl9c.onrender.com";
 
 const Cart = () => {
     const { id } = useParams("");
