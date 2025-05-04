@@ -47,16 +47,15 @@ const Cart = () => {
     //add cart function
     const addtocart = async (id) => {
         if (!account || !account._id) {
-            // User is not logged in, redirect to sign-in
-            toast.warning("Sign in to proceed", {
+            toast.warning("Please sign in to add items to cart", {
                 position: "top-center",
-            })
+            });
             history("/login");
             return;
         }
-    
+
         try {
-            const checkres = await fetch(`https://tob-pl9c.onrender.com/addcart/${id}`, {
+            const checkres = await fetch(`${BASE_URL}/addcart/${id}`, {
                 method: "POST",
                 headers: {
                     Accept: "application/json",
@@ -65,30 +64,39 @@ const Cart = () => {
                 body: JSON.stringify({ inddata }),
                 credentials: "include"
             });
-    
+
             const data1 = await checkres.json();
-            console.log(data1);
-    
-            if (checkres.status === 401 || !data1) {
-                console.log("User Invalid");
-                alert("User Invalid");
-            } else {
-                toast.success("Item Added to Cart", {
+
+            if (checkres.status === 401) {
+                toast.error(data1.error || "Please login to continue", {
                     position: "top-center",
-                    icon: <span style={{ color: "#D7A86E", fontSize: "20px" }}>✔</span>, // custom icon with color
-                    style: {
-                        background: "#fff",
-                        color: "#000",
-                    },
-                    progressStyle: {
-                        background: "#D7A86E",
-                    },
                 });
-                history("/buynow");
-                setAccount(data1);
+                history("/login");
+                return;
             }
+
+            if (!checkres.ok) {
+                throw new Error(data1.error || "Failed to add item to cart");
+            }
+
+            toast.success("Item Added to Cart", {
+                position: "top-center",
+                icon: <span style={{ color: "#D7A86E", fontSize: "20px" }}>✔</span>,
+                style: {
+                    background: "#fff",
+                    color: "#000",
+                },
+                progressStyle: {
+                    background: "#D7A86E",
+                },
+            });
+            history("/buynow");
+            setAccount(data1.user);
         } catch (error) {
             console.error("Error adding to cart:", error);
+            toast.error(error.message || "Failed to add item to cart. Please try again.", {
+                position: "top-center",
+            });
         }
     };
     
