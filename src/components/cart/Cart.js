@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./cart.css";
 
-const BASE_URL = process.env.REACT_APP_API_URL || "https://tob-pl9c.onrender.com";
+const BASE_URL = "https://tob-pl9c.onrender.com";
 
 const Cart = () => {
     const { id } = useParams("");
@@ -146,90 +146,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useEffect, useState } from 'react';
-// import "./cart.css";
-// import { useParams } from 'react-router-dom';
-
-// const Cart = () => {
-
-//     const {id} = useParams("");
-//     const [inddata,setInddata] = useState([]);
-//     console.log(inddata);
-//     // console.log(id);
-
-//     const getinddata = async () => {
-//         const res = await fetch(`/getproductsone/${id}`,{
-//             method:"GET",
-//             headers: {
-//                 "Content-Type":"application/json"
-//             }
-//         });
-//         const data = await res.json();
-//          console.log(data);
-//         // return data;
-
-//         if(res.status !== 201){
-//             console.log("no data available");
-//         }else{
-//             console.log("get data");
-//             setInddata(data);
-//         }
-//     }
-
-//     useEffect(()=>{
-//         getinddata();
-//     }, [id]);
-
-//     return (
-//         <div className='cart_section'>
-//             <div className='cart_container'>
-//                 <div className='left_cart'>
-//                     {/* <img src={inddata.detailUrl } alt="cart_img" /> */}
-//                     <img src={inddata?.detailUrl} alt="cart_img" onError={(e) => e.target.src = "/fallback-image.png"} />
-//                     <div className='cart_btn'>
-//                         <button className='cart_btn1'>Add to Cart</button>
-//                         <button className='cart_btn2'>Buy Now</button>
-//                     </div>
-//                 </div>
-//                 <div className='right_cart'>
-//                     <h3>Premium Raw Tobacco for Authentic Experience</h3>
-//                     <h4>Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience</h4>
-//                     <hr style={{ width: "100%", border: "1px solid #ccc" }} />
-//                     <p className='mrp'>M.R.P. : ₹599</p>
-//                     <p>Deal of the Day : <span style={{ color: "" }}>₹499</span> </p>
-//                     <p>You Save: <span style={{ color: "" }}>₹100</span></p>
-//                     <div className='discount_box'>
-//                         {/* <h5>Discount </h5> */}
-//                         <h4>Delivery : <span style={{ color: "#111", fontWeight: 600 }}>Within 7-8 Days</span> Details</h4>
-//                         <p>Fastest Delivery: <span style={{ color: "#111", fontWeight: 600 }}>Tomorrow 11AM</span></p>
-//                     </div>
-//                     <p className='description'>About the Item: <span style={{ color: "#565959", fontSize: 14, fontWeight: 500, letterSpacing: "0.4px" }}>Premium Raw Tobacco - Handpicked, Natural, and unprocessed for the True ExperiencePremium Raw Tobacco - Handpicked, Natural, and unprocessed for the True ExperiencePremium Raw Tobacco - Handpicked, Natural, and unprocessed for the True Experience</span></p>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Cart;
-
-
-
